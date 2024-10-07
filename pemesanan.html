@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>VSGA JUNIOR WEBDEV 2023</title>
+</head>
+<body>
+    <h1>DTS - VSGA 2023</h1>
+    <h2>Kelas Junior Web Developer</h2>
+    <ul>
+        <li><a href="pemesanan.html">Pesan Bang</a></li>
+        <li><a href="daftar-penjualan.html">Daftar Penjualan</a></li>
+        <li><a href="index.html">Tentang Kami</a></li>
+        <li><a href="#">Tutorial</a></li>
+    </ul>
+    <h2>Form Pemesanan</h2>
+    <form method="get" action="proses_form.php">
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td><input type="text" name="nama"></td>
+            </tr>
+            <tr>
+                <td>Nomor Meja</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="nomor-meja" value="1">Meja 01
+                    <input type="radio" name="nomor-meja" value="2">Meja 02
+                    <input type="radio" name="nomor-meja" value="3">Meja 03
+                    <input type="radio" name="nomor-meja" value="4">Meja 04
+                    <input type="radio" name="nomor-meja" value="5">Meja 05
+                </td>
+            </tr>
+            <tr>
+                <td>Pilih Makanan/Minuman</td>
+                <td>:</td>
+                <td>
+                    <select name="makanan">
+                        <option value="Nasi Goreng Pedas">Nasi Goreng Pedas</option>
+                        <option value="Nasi Goreng Bakar">Nasi Goreng Bakar</option>
+                        <option value="Mie Ayam Bakar">Mie Ayam Bakar</option>
+                        <option value="Roti Rebus">Roti Rebus</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Jumlah Pesanan</td>
+                <td>:</td>
+                <td><input type="number" name="jumlah-pesanan" id="jumlah-pesanan" onchange="validasi_jumlah()"></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="submit" name="submit" value="Pesan Sekarang">
+                    <input type="reset" name="reset" value="Reset Input">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="assets/validasi.js"></script>
+</body>
+</html>
